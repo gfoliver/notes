@@ -16,6 +16,10 @@ const card = styled.div`
         border-radius: 4px 4px 0 0;
     }
 
+    .contentWrapper {
+        cursor: pointer;
+    }
+
     .title {
         font-size: 20px;
         font-weight: bold;
@@ -33,6 +37,11 @@ const card = styled.div`
         width: 30px;
         height: 30px;
         text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        border: none;
+        z-index: 2;
+        cursor: not-allowed;
     }
 
     .complete {

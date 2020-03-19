@@ -12,6 +12,16 @@ const button = styled.button`
     & + button {
         margin-left: 30px;
     }
+
+    @media only screen and (max-width: 750px) {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    @media only screen and (max-width: 455px) {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
 `;
 
 export default button

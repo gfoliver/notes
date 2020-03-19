@@ -44,6 +44,26 @@ export default createGlobalStyle`
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 30px;
+
+            @media only screen and (max-width: 1200px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            @media only screen and (max-width: 940px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media only screen and (max-width: 750px) {
+            padding: 30px;
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .notes {
+                grid-template-columns: 1fr;
+            }
         }
     }
 `

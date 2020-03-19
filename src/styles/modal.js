@@ -28,6 +28,26 @@ const Modal = styled.div`
         animation: fadeInFull .5s forwards;
         min-width: 30vw;
         max-width: 100%;
+        max-height: 90%;
+        overflow: auto;
+
+        @media only screen and (max-width: 1200px) {
+            min-width: 50vw;
+        }
+
+        @media only screen and (max-width: 950px) {
+            min-width: 70vw;
+        }
+        
+        @media only screen and (max-width: 500px) {
+            min-width: 100vw;
+            max-height: 100%;
+            height: 100%;
+        }
+
+        &.noteModal {
+            padding: 50px 30px;
+        }
 
         .buttons {
             margin-top: 50px;
@@ -56,6 +76,14 @@ const Modal = styled.div`
 
         h2 {
             margin-bottom: 30px;
+        }
+
+        .fullContent {
+            white-space: pre-line;
+        }
+
+        .delete {
+            cursor: pointer;
         }
 
         .inputGroup {
