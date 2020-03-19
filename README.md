@@ -1,3 +1,12 @@
 # Notes
 
-A notes application made with **ReactJS** and **Styled Components**
+An application to store notes on your browser
+
+## Built With
+
+* [ReactJS](https://reactjs.org/)
+* [Styled Components](https://styled-components.com/) - CSS in JS
+
+## Authors
+
+* **Guilherme Fleck Oliveira** 
